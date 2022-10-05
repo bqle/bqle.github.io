@@ -1,0 +1,5 @@
+# build files
+*.lock
+
+# system files
+.DS_Store

@@ -1,0 +1,368 @@
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: "Benjamin Le"
+theme: hugo-profile
+enableEmoji: true
+
+Paginate: 3
+# disqusShortname: gurusabarish
+# googleAnalytics: G-DWJJVE27WD
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+    
+    - identifier: gallery
+      name: Gallery
+      title: Blog posts
+      url: /gallery
+      weight: 2
+
+    # Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "BL"
+  description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/images/logo/logo_transparent.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    disableThemeToggle: false
+    # defaultTheme: "light" # dark
+
+  # font:
+  #   fontSize: 1.5rem # default: 1rem
+  #   fontWeight: 500 # default: 400
+  #   lineHeight: 1 # default: 1.5
+  #   textAlign: right # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  # navbar:
+  #   align: mx-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+  #   brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+  #   brandName: "Profile" # Brand name for the brand | default is the title variable
+
+  #   menus:
+  #     disableAbout: true
+  #     disableExperience: true
+  #     disableEducation: true
+  #     disableProjects: true
+      # disableAchievements: true
+  #     disableContact: true
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hello! My name is"
+    title: "Benjamin Le"
+    # subtitle: "I build things for the web"
+    content: |-
+      I am an undergraduate student at the University of Pennsylvania studying Computer Science and Mathematics. I love developing useful
+      products, solving difficult problems, and learning along the way. I have a diverse set of skills involving software engineering, web
+      development, and project management. Earlier in my life, I participated in lots of competitive mathematics and physics 
+      which helped me develop my analytical skills and inituition for first-principle approaches. In my free time, I love learning about 
+      algorithms & software design, playing soccer, and jamming on the guitar. 
+    image: /images/profile-pic.jpeg
+    button:
+      enable: true
+      name: "Resume"
+      url: "/images/hero.svg"
+      download: true 
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/bqle
+        - icon: fab fa-google
+          email: bqle@seas.upenn.edu
+        - icon: fab fa-linkedin
+          url: https://linkedin.com/in/bqle
+      # customIcons:
+      #   - icon: /fav.png
+      #     url: "https://example.com"
+
+
+  # About
+  about:
+    enable: false
+    title: "About Me"
+    image: "/images/profile-pic.jpeg"
+    
+    content: |-
+      I am an undergraduate student at the University of Pennsylvania studying Computer Science and Mathematics. I love developing useful
+      products, solving difficult problems, and learning along the way. I have a diverse set of skills involving software engineering, web
+      development, and project management. Earlier in my life, I participated in lots of competitive mathematics and physics 
+      which helped me develop my analytical skills and inituition for first-principle approaches. In my free time, I love learning about 
+      algorithms & software design, and regularly participate in competitive programming contests. 
+    
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with recently:"
+      items:
+        - "C++"
+        - "C"
+        - "Java"
+        - "Python"
+        - "React"
+        - "Typescript"
+        - "Docker"
+        - "AWS (EC2, S3, DynamoDB)"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Software Engineering Intern"
+        company: "Photon Commerce"
+        companyUrl: "https://www.photoncommerce.com/"
+        date: "Jan 2022 - Aug 2022"
+        featuredLink:
+          enable: true
+          name: "View the project"
+          url: "https://www.photoncommerce.com/smart-pay"
+        info:
+          enable: true
+          content: I worked as a software engineering intern at a fintech company that aims to automate payments
+        content: "During freshman year and the following Summer, I interned at Photon Commerce, a fintech company based in San Francisco, CA that aims to automate the parsing and payment
+                of financial documents. There, I developed efficient algorithms for extracting key fields from invoices, clustering algorithms 
+                to identify key templates from a dataset of 100k+ images. To culminate my internship, I proposed and developed a REST API wrapper with over 60 endpoints and 2000 lines of code around the Federal Reserve's 
+                new FedNow service that allows banks to clear and settle transfers near real-time. I received commendation from the CEO for my speed of development, organization, robustness, and 
+                rigorous testing."
+
+      - job: "Backend Team Lead"
+        company: "Penn Labs"
+        companyUrl: "https://https://pennlabs.org/"
+        date: "Sep 2021 - Present"
+        featuredLink:
+          enable: true
+          name: "View the project"
+          url: "https://pennlabs.org/products/office-hours-queue"
+        info:
+          enable: true
+          content: I am a backend teamlead for the leading software engineering club at UPenn.
+        content: |
+          I am currently a backend teamlead for [OHQ](https://ohq.io) a webapp sprung from the pandemic that streamlines the office hours experience 
+          for over 10k students & faculty in the Penn Community. Technology I work with include Django REST framework, S3/boto3, Typescript, Docker, and Kubernetes.
+          Features I have pushed and developed for our product includes:
+          - File share: a file uploader that enables students & TAs to share files live through the app.
+          - Calendar: a calendar API that allows TAs to manage a calendar of events for the course.
+          - Pins: my onboarding project that give TAs the option to require students to enter a pin to ask a question.
+      
+      - job: "Problem Designer & Test Maker"
+        company: "PClassic"
+        companyUrl: "https://pclassic.org/rules"
+        date: "Sep 2022 - Present"
+        featuredLink:
+          enable: true
+          name: "About PClassic"
+          url: "https://xkcd.com/1667/"
+        content: "I help design problems & make test cases for the Philadelphia Classic - one of the largest in-person 
+          (soon, after the pandemic) high school coding competitions in the Northeast. We gather once a week to discuss
+          interesting problem ideas and write problems for our bi-annual competitions in Fall and Spring. A big part of our work
+          also involve writing test (which has developed my own skills at checking edge cases), and preparing our server for 
+          the day of competition."
+          
+      - job: "Teaching Assistant"
+        company: "UPenn"
+        companyUrl: "https://www.cis.upenn.edu/"
+        date: "Sep 2022 - Present"
+        featuredLink:
+          enable: true
+          name: "Our Essential Lesson"
+          url: "https://xkcd.com/1667/"
+        info:
+          enable: true
+          content: I am a teaching assistant for multiple analytical courses at UPenn
+        content: |-
+          My current teaching assistant duties:
+          - Theory of Computation (CIS 2620): I work with a team of TAs to prepare course material, design homework, hold office hours, and grade papers for an 
+          undergraduate course of over 150 students. The topics include cellular automata, computability, and complexity.
+          - Calculus Probability (Stat 5100): I am a teaching assistant for one of the core courses on probability for the Statistics Department at the Wharton 
+          School. I help grade papers, and inform the professor on the students' pace of learning.
+  
+  # Education
+  education:
+    enable: false
+    # title: "Custom Name"
+    # index: true
+    items:
+      - title: "Master of Business Administration"
+        school:
+          name: "University of California, Berkeley"
+          url: "https://example.org"
+        date: "2013 - 2015"
+        GPA: "3.8 out of 5.0"
+        content: |-
+          Extracurricular Activities
+            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+      - title: "Bachelor of Science in Computer Science"
+        school:
+          name: "Massachusetts Institute of Technology"
+          url: "https://example.org"
+        date: "2009 - 2013"
+        GPA: "3.9 out of 5.0"
+        content: |-
+          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
+          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
+          - Face mask detection using a single convolutional neural network.
+
+          Extracurricular Activities
+            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+        featuredLink:
+          enable: true
+          name: "My academic record"
+          url: "https://example.com"
+      - title: "High School"
+        school:
+          name: "Thomas Jefferson High School for Science and Technology."
+          url: "https://example.org"
+        GPA: "4.2 out of 5.0"
+        featuredLink:
+          enable: true
+          url: "https://example.com"
+
+  # Achievements
+  achievements:
+    enable: true
+    title: "Technical Coursework"
+    items:
+      - title: Theory of Computation 
+        content: "CIS 2620 focuses on the fundamentals of the theory of computation. The topics include finite automata and regular languages, context-free grammars and pushdown automata, Turing machines and undecidability, tractability and NP-completeness."
+      # - title: Mathematical Foundations of CS
+      #   content: "CIS 1600 provides an introduction to proof principles and logics, functions and relations, induction principles, combinatorics and graph theory, as well as a rigorous grounding in writing and reading mathematical proofs."
+      - title: Data Structures and Algorithms
+        content: "CIS 1210 is a fundamental course that focuses on the basic data structures and algorithms using the Java language. Topics include stacks, trees, maps, trees, and graphs and how
+        to use them to solve difficult problems efficiently."
+      - title: Programming Languages and Techniques
+        content: "CIS 1200 uses OCaml and Java to introduce students to programming design, introducing topics like
+        data types and representation, abstraction, test-driven development, programming patterns, functional programming, and object-oriented programming."
+      - title: Computer Operating Systems
+        content: "CIS 3800 is an introduction to the theory and practice behind modern computer operating systems. Topics include what an operating system does, system calls and interfaces, processes and threads, concurrent programming, resource scheduling and management, virtual memory, deadlocks, and virtualization."
+      - title: Computer Graphics
+        content: "CIS 5600 covers the technical aspects of 3D Modeling including viewing transformations, polygon and mesh data structures, keyframe animation, and interactive manipulation. We write a series program assignments in C++ that build up to a 3D game final project."
+      - title: Real Analysis
+        content: A study of the foundations of the differential and integral calculus, including the real numbers and elementary topology, continuous and differentiable functions, and more.
+      - title: Complex Analysis
+        content: A study of the complex numbers, DeMoivre's theorem, complex valued functions of a complex variable, the derivative, analytic functions, the Cauchy-Riemann equations, and more.
+      - title: "Ordinary & Partial Differential Equations"
+        content: "Ordinary & partial differential equations and their solutions including solutions of the wave, heat and Laplace equations, and Sturm-Liouville problems."
+      - title: "Modern Algebra"
+        content: "Theory of abstract algebra, with particular emphasis on groups, quotient groups, symmetry groups in three dimensions, Pólya-Burnside method, rings and fields, polynomial and Euclidean rings, quotient rings, field extensions, and geometrical constructions."
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: 3D Tic Tac Toe
+        content: An experiment with 3D development on web apps and socket development to see what it is like to play three dimensional tic tac toe. 
+        image: /blogs/3dt.png
+        featured:
+          name: Read More
+          link: /blogs/3d-tic-tac-toe
+        badges:
+          - "Typescript"
+          - "ThreeJS"
+          - "SocketIO"
+          - "Flask"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/hugo-profile
+          - icon: fab fa-twitter
+            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+      - title: Image Converter
+        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+        image: /images/projects/converter.jpg
+        featured:
+          name: Demo
+          link: https://django-converter.herokuapp.com
+        # badges:
+        #   - "Django"
+        #   - "Bootstrap"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/converter
+
+      - title: Hugo Profile V2
+        content: A clean and simple Hugo template for personal portfolio and blog.
+        image: /images/projects/profile2.jpg
+        featured:
+          name: Demo V2
+          link: https://hugo-profile-2.netlify.app
+        # badges:
+        #   - "Hugo"
+        #   - "Bootstrap"
+        #   - "Javascript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/HugoProfileV2
+
+  #Contact
+  contact:
+    enable: false
+    title: "Contact me"
+    content: I'm looking for a fast-paced environment that is doing exciting work. Feel free to reach out!
+    email: bqle@seas.upenn.edu
+    btnName: Email me
+
+  footer:
+    # recentPosts: false
+    socialNetworks:
+      # github: https://github.com/bqle
+      # linkedin: https://linkedin.com/bin/bqle
+      
