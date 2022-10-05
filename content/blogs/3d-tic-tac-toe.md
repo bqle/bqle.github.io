@@ -1,7 +1,7 @@
 ---
 title: "3D Tic Tac Toe"
 date: 2022-09-29T19:49:29-04:00
-draft: true
+draft: false
 author: "Benjamin Le"
 image: /blogs/3dt.png
 ---
