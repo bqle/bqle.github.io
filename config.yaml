@@ -107,8 +107,8 @@ params:
     content: |-
       I am an undergraduate student at the University of Pennsylvania studying Computer Science and Mathematics. I love developing useful
       products, solving difficult problems, and learning along the way. I have a diverse set of skills involving software engineering, web
-      development, and project management. Earlier in my life, I participated in lots of competitive mathematics and physics 
-      which helped me develop my analytical skills and inituition for first-principle approaches. In my free time, I love learning about 
+      development, and project management. Earlier in my life, I participated in lots of competitive math and physics 
+      which helped develop my analytical skills and inituition for first-principle approaches. In my free time, I love learning about 
       algorithms & software design, playing soccer, and jamming on the guitar. 
     image: /images/profile-pic.jpeg
     button:
@@ -312,16 +312,13 @@ params:
           link: /blogs/3d-tic-tac-toe
         badges:
           - "Typescript"
+          - "Python"
           - "ThreeJS"
           - "SocketIO"
           - "Flask"
         links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+            url: https://github.com/bqle/3d-tic-tac-toe
 
       - title: Image Converter
         content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
