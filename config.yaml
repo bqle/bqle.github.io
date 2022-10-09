@@ -114,8 +114,8 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "/images/hero.svg"
-      download: true 
+      url: "/resume.pdf"
+      download: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
@@ -320,32 +320,41 @@ params:
           - icon: fab fa-github
             url: https://github.com/bqle/3d-tic-tac-toe
 
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
+      - title: FedNow Service Wrapper
+        content: Over Summer 2022, during my internship with Photon Commerce, I created a wrapper around the 
+          Fed's new FedNow Service with thorough documentation and unit testing. I received commended by the 
+          CEO for its robustness, rigor, comprehensibility, and development speed.
+        image: /blogs/fednow.jpeg
         featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
-        # badges:
-        #   - "Django"
-        #   - "Bootstrap"
+          name: Read More
+          link: /blogs/photon-commerce
+        badges:
+          - "Django"
+          - "SQL"
+          - "AWS"
+          - "REST API"
         links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+          - icon: fab fa-chrome
+            url: https://www.photoncommerce.com/smart-pay
 
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
+      - title: Office Hours Queue
+        content: A significant part of my time at Penn has been dedicated towards OHQ - a tool that
+          intuitively streamlines office hours for 7k+ students in the Penn community. I regularly work
+          with and learned lots about the Django REST framework, Django ORM, auto-docs, sockets, and
+          CI/CD tools.
+        image: /blogs/ohq-front.png
         featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
-        # badges:
-        #   - "Hugo"
-        #   - "Bootstrap"
-        #   - "Javascript"
+          name: Read More
+          link: /blogs/ohq
+        badges:
+          - "Django REST"
+          - "PostgreSQL"
+          - "AWS/S3"
+          - "Sockets"
+          - "Docker"
         links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+          - icon: fab fa-chrome
+            url: https://ohq.io
 
   #Contact
   contact:
