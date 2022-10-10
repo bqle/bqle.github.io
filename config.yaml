@@ -166,8 +166,8 @@ params:
         date: "Jan 2022 - Aug 2022"
         featuredLink:
           enable: true
-          name: "View the project"
-          url: "https://www.photoncommerce.com/smart-pay"
+          name: "Read more"
+          url: "/blogs/photon-commerce"
         info:
           enable: true
           content: I worked as a software engineering intern at a fintech company that aims to automate payments
@@ -332,7 +332,9 @@ params:
           - "Django"
           - "SQL"
           - "AWS"
+          - "S3"
           - "REST API"
+          - "Cron"
         links:
           - icon: fab fa-chrome
             url: https://www.photoncommerce.com/smart-pay
