@@ -304,22 +304,6 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - title: 3D Tic Tac Toe
-        content: An experiment with 3D development on web apps and socket development to see what it is like to play three dimensional tic tac toe. 
-        image: /blogs/3dt.png
-        featured:
-          name: Read More
-          link: /blogs/3d-tic-tac-toe
-        badges:
-          - "Typescript"
-          - "Python"
-          - "ThreeJS"
-          - "SocketIO"
-          - "Flask"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/bqle/3d-tic-tac-toe
-
       - title: FedNow Service Wrapper
         content: Over Summer 2022, during my internship with Photon Commerce, I created a wrapper around the 
           Fed's new FedNow Service with thorough documentation and unit testing. I received commended by the 
@@ -357,7 +341,21 @@ params:
         links:
           - icon: fab fa-chrome
             url: https://ohq.io
-
+      - title: 3D Tic Tac Toe
+        content: An experiment with 3D development on web apps and socket development to see what it is like to play three dimensional tic tac toe. 
+        image: /blogs/3dt.png
+        featured:
+          name: Read More
+          link: /blogs/3d-tic-tac-toe
+        badges:
+          - "Typescript"
+          - "Python"
+          - "ThreeJS"
+          - "SocketIO"
+          - "Flask"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/bqle/3d-tic-tac-toe
   #Contact
   contact:
     enable: false

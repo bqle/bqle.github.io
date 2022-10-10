@@ -1,5 +1,5 @@
 ---
-title: "Photon Commerce Internship"
+title: "Photon Commerce"
 date: 2022-10-06T08:42:53-04:00
 draft: false
 ---
