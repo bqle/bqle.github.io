@@ -4,7 +4,7 @@ title: "Benjamin Le"
 theme: hugo-profile
 enableEmoji: true
 
-Paginate: 3
+Paginate: 6
 
 markup:
   goldmark:
@@ -171,7 +171,7 @@ params:
         info:
           enable: true
           content: I worked as a software engineering intern at a fintech company that aims to automate payments
-        content: "During freshman year and the following Summer, I interned at Photon Commerce, a fintech company based in San Francisco, CA that aims to automate the parsing and payment
+        content: "During freshman Spring and Summer, I interned at Photon Commerce, a fintech company based in San Francisco, CA that aims to automate the parsing and payment
                 of financial documents. There, I developed efficient algorithms for extracting key fields from invoices, clustering algorithms 
                 to identify key templates from a dataset of 100k+ images. To culminate my internship, I proposed and developed a REST API wrapper with over 60 endpoints and 2000 lines of code around the Federal Reserve's 
                 new FedNow service that allows banks to clear and settle transfers near real-time. I received commendation from the CEO for my speed of development, organization, robustness, and 
@@ -234,43 +234,14 @@ params:
     # title: "Custom Name"
     # index: true
     items:
-      - title: "Master of Business Administration"
+      - title: "Bachelor of Science in Engineering"
         school:
-          name: "University of California, Berkeley"
+          name: "University of Pennsylvania"
           url: "https://example.org"
-        date: "2013 - 2015"
-        GPA: "3.8 out of 5.0"
-        content: |-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-      - title: "Bachelor of Science in Computer Science"
-        school:
-          name: "Massachusetts Institute of Technology"
-          url: "https://example.org"
-        date: "2009 - 2013"
-        GPA: "3.9 out of 5.0"
-        content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        featuredLink:
-          enable: true
-          name: "My academic record"
-          url: "https://example.com"
-      - title: "High School"
-        school:
-          name: "Thomas Jefferson High School for Science and Technology."
-          url: "https://example.org"
-        GPA: "4.2 out of 5.0"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-
+        date: "2021 - 2025"
+        GPA: "3.94 out of 4.0"
+        content: "asdfasdfl;jasdf"
+      
   # Achievements
   achievements:
     enable: true
@@ -302,7 +273,6 @@ params:
   # projects
   projects:
     enable: true
-    # title: "Custom Name"
     items:
       - title: FedNow Service Wrapper
         content: Over Summer 2022, during my internship with Photon Commerce, I created a wrapper around the 
