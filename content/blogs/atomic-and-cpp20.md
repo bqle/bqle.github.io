@@ -17,4 +17,16 @@ However, upon recompiling the same benchmark with c++20, instantiation time for 
 {{<figure src="/blogs/cpp20atomic_creation.png"  width="50%">}}
 And note that for versions of c++ before 20, the instantiation times of ```atomic int``` and ```int``` are almost equivalent. What changes occurred with c++ 20 to cause this?
 
-## Godbolt Doesn't Explain
+## Godbolt Doesn't Help
+
+A common practice that I've seen C++ developers do is to inspect the compiled binary on [Compiler Explorer](godbolt.org). However, CE does not reveal any differences. Both lines seem to be boiled down to a simple ```mov eax, 0```. I think CE is hiding the constructor instructions of ```std::atomic``` since it's part of the standard library. No clue here.
+
+## Reddit It Is
+
+Sad at my own helplessness and my lack of C++ mentors with whom I can come to, I decided to ask the question on [Reddit](https://www.reddit.com/r/cpp/comments/zxsjs1/stdatomic_and_m1_weird_behavior/). After some back and forth, it seems as though there is a minor difference in the compiler / compiler optimizations. Specifically, when compiled with optimization (greater or equal than -O2), the two instantiations happen at the same speed for cpp20. Any optimization below -O2 still gives discrepant results. 
+
+For now, I have put down my pencil trying to figure out this issue. I am still disastisfied as to:
+1. The nature of the optimization being made with -O2
+2. The cause of discrepancy between cpp17 and cpp20 *when there is no optimizion*. 
+
+A person on the subreddit also suggested that I should also add more substantial workload for my test to be reliable, but I have increased the loop by 10,000, and the mystery still persists. Maybe I can seek help again once I meet people at HRT. 
