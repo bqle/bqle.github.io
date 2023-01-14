@@ -3,7 +3,7 @@ title: "What happened to Atomic and C++20?"
 date: 2022-12-28T14:08:16+07:00
 draft: false
 ---
-*In a small benchmark of std::atomic operations, I encountered something bizarre with instantiation of the built-in variables.*
+*In a small benchmark of std::atomic operations, I encountered something bizarre with instantiation of the built-in variables in C++20.*
 
 <!--more-->
 ## Discovery
